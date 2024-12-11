@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./../favicon.png.png" type="image/x-icon">
+    <link rel="stylesheet" href="./../css/presupuesto.css">
+    <title>Presupuesto</title>
+</head>
+<body>
+    <header>
+        <h1>Presupuesto</h1>
+        <p>Solicita tu presupuesto sin compromiso y ajustado a tus necesidades.</p>
+        <img src="./../assets/images/logo8.png" alt="Logotipo" width="1024" height="1024" class="logo">
+        </header>
+    <nav>
+        <ul>
+            <li><a href="./../index.html">Inicio</a></li>
+            <li><a href="./../views/productos.html">Productos</a></li>
+            <li><a href="./../views/presupuesto.html" class="active">Presupuesto</a></li>
+            <li><a href="./../views/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Solicitar Presupuesto</h2>
+            <form action="#" method="post" id="presupuesto-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="El nombre solo debe contener letras y espacios.">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" title="Introduce un email válido (ejemplo@dominio.com).">
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" title="El teléfono debe contener exactamente 10 dígitos.">
+                
+                <label for="informacion">Solicitar más información:</label>
+                <textarea id="informacion" name="informacion" rows="4" required minlength="10" title="El mensaje debe contener al menos 10 caracteres."></textarea>
+
+                <label for="politica">
+                    <input type="checkbox" id="politica" name="politica" required>
+                    Acepto la <a href="./../views/politica-privacidad.html" target="_blank">Política de privacidad</a>
+                </label>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <!-- Redes Sociales -->
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./../assets/images/facebook.jfif" alt="Facebook" width="172" height="180">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./../assets/images/twitter.jfif" alt="Twitter" width="177" height="180">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./../assets/images/instragram.jfif" alt="Instagram" width="474" height="266">
+                </a>
+            </div>
+            
+            <!-- Dirección -->
+            <div class="company-info">
+                <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+                <p>Teléfono: +123 456 789</p>
+                <p>Email: contacto@ejemplo.com</p>
+            </div>
+            
+            <!-- Aviso legal -->
+            <div class="legal">
+                <p>&copy; 2024 Empresa Ejemplo. Todos los derechos reservados.</p>
+                <a href="./../views/avisolegal.html" target="_blank">Aviso Legal</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

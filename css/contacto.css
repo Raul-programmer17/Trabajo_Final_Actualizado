@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: gray;
+    color: white;
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    border-radius: 20px;
+}
+
+/****NAV****/
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    background-color: black;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul a:hover {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    border-radius: 20px;
+    
+}
+
+h1{
+    text-align: center;
+    font-size:40px;   
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.titulo-seccion{
+    text-align: center;
+}
+
+
+/****FORMULARIO****/
+.contact-form, .mapa {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.mapa img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    
+}
+
+.mapa :hover{
+    transform: scale(1.05);
+}
+
+
+/****FOOTER****/
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+.company-info p,
+.legal p {
+    margin: 5px 0;
+}
+
+.legal a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.legal a:hover {
+    text-decoration: underline;
+}
+
+
+
+/****TAMAÑO DE PANTALLA****/
+
+/****TABLET****/
+@media (max-width:991px){
+    header, nav, main, footer{
+        width: 100%;
+    }
+    header{
+        align-items: center;
+    }
+    main section article{
+        width: 45%;
+    }
+
+}
+
+/****MOVIL****/
+@media (max-width:580px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+    main{
+        flex-direction: column;
+    }
+
+    main section{
+        width: 100%;
+    }
+
+    main aside{
+        width: 100%;
+        display: none;
+    }
+
+    main section article{
+        width: 95%;
+    }
+
+    form {
+        width: 95%;
+    }
+}
+
+
+

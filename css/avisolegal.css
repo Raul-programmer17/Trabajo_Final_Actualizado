@@ -1,0 +1,162 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+
+a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+.company-info p,
+.legal p {
+    margin: 5px 0;
+}
+
+.legal a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.legal a:hover {
+    text-decoration: underline;
+}
+
+
+footer p {
+    font-size: 14px;
+}
+
+
+
+/****TAMAÑO DE PANTALLA****/
+
+/****TABLET****/
+@media (max-width:991px){
+    header, nav, main, footer{
+        width: 100%;
+    }
+    header{
+        align-items: center;
+    }
+    main section article{
+        width: 45%;
+    }
+
+}
+
+/****MOVIL****/
+@media (max-width:580px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+    main{
+        flex-direction: column;
+    }
+
+    main section{
+        width: 100%;
+    }
+
+    main aside{
+        width: 100%;
+        display: none;
+    }
+
+    main section article{
+        width: 95%;
+    }
+}
+
+
+

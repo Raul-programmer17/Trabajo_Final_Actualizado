@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: gray;
+    color: white;
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    border-radius: 20px;
+}
+
+/****NAV****/
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    background-color: black;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul a:hover {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    border-radius: 20px;
+    
+}
+
+h1{
+    text-align: center;
+    font-size:40px;   
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+h2{
+    text-align: center;
+    padding-top: 10px;
+}
+
+form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+form a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: black;
+}
+
+/****FOOTER****/
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+.company-info p,
+.legal p {
+    margin: 5px 0;
+}
+
+.legal a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.legal a:hover {
+    text-decoration: underline;
+}
+
+/****TAMAÑO DE PANTALLA****/
+
+/****TABLET****/
+@media (max-width:991px){
+    header, nav, main, footer{
+        width: 100%;
+    }
+    header{
+        align-items: center;
+    }
+    main section article{
+        width: 45%;
+    }
+
+}
+
+/****MOVIL****/
+@media (max-width:580px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+    main{
+        flex-direction: column;
+    }
+
+    main section{
+        width: 100%;
+    }
+
+    main aside{
+        width: 100%;
+        display: none;
+    }
+
+    main section article{
+        width: 95%;
+    }
+
+    form {
+        width: 95%;
+    }
+}
+
+
+
